@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./SurveyCertificate_Style.css"
+      type="text/css"
+    />
+    <title>Survey-Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey for users</p>
+    <form id="survey-form">
+      <input required type="text" id="name" placeholder="Your name" />
+      <label for="name" id="name-label">Name</label>
+      <input required type="email" id="email" placeholder="email@website.com" />
+      <label for="email" id="email-label">E-mail</label>
+      <input
+        type="number"
+        id="number"
+        min="100000000"
+        max="999999999"
+        placeholder="xxx xxx xxx"
+      />
+      <label for="number" id="number-label">Number</label>
+
+      <select name="sex" id="dropdown">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <input type="radio" name="satisfaction" id="great" value="great" />
+      <label for="great" id="great">great</label>
+      <input type="radio" name="satisfaction" id="good" value="good" />
+      <label for="good" id="good">good</label>
+      <input type="radio" name="satisfaction" id="bad" value="bad" />
+      <label for="bad" id="bad">bad</label>
+      <input type="radio" name="satisfaction" id="terrible" value="terrible" />
+      <label for="terrible" id="terrible">terrible</label>
+
+      <input type="checkbox" name="problems" id="effects" value="effects" />
+      <label for="effects">Not happy of effects</label>
+      <input type="checkbox" name="problems" id="price" value="price" />
+      <label for="price">Too expensive</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      <button type="submit" id="submit"></button>
+    </form>
+  </body>
+</html>
